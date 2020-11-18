@@ -1,4 +1,92 @@
+$body-bg: #303030;
+$button-bg: #7a7a7a;
+$clearbtn-bg: #af3931;
+$equalbtn-bg: #cf5c39;
+$calc-bg: #39393a;
+$screen-overlay: #c7cfad;
+$screen-text-color: #687248;
+
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: $body-bg;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.calc-base{
+    margin:50px auto;
+    width: 750px;
+    height: 710px;
+    background-color: $calc-bg;
+    border-radius: 5%;
+    box-shadow: 0px 0px 20px 0px black;
+}
+
+.calc-screen{
+    box-sizing: border-box;
+    width: 605px;
+    height: 100px;
+    margin-top: 50px;
+    background-color: $screen-overlay;
+    
+
+}
+
+.calc-screen{
+    font-size: 2em;
+    color: $screen-text-color;
+    padding: 20px;
+}
+
+#button-grid{
+    margin-top: 40px;
+}
+
+.btn-row{
+    display: flex;
+    flex-direction: row;
+} 
+
+.btn{
+    width: 136px;
+    height: 75px;
+    background-color: $button-bg;
+    color:#fff;
+    font-size: 1.5em;
+    text-align: center;
+    margin: 10px 10px;
+    box-shadow: 0px 1px 2px black;
+
+    p{
+        padding: 25px 0;
+    }
+
+}
+
+.operator{
+    background-color: #545454;
+}
+
+#clear-btn{
+    background-color: $clearbtn-bg;
+}
+
+#equal-btn{
+    width: 605px;
+    background-color: $equalbtn-bg;
+    font-size: 2.5em;
+    font-weight: bold;
+
+    p{
+        padding: 15px 0;
+    }
 }
